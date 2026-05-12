@@ -5,6 +5,8 @@ import './css/site.scss';
 // Import all JavaScript
 import './js/vendor.js';
 import './js/custom.js';
+import './js/pages/data-analysis.js';
+import { initChart } from './js/pages/chart.js';
 
 // Initialize page-specific functionality after DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -13,18 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPage = urlParams.get('page') || 'document_view';
     
     // Page-specific initialization
-    if (currentPage === 'data-analysis') {
-        import('./js/pages/data-analysis.js').then(module => {
-            if (module.initDataAnalysis) {
-                module.initDataAnalysis();
-            }
-        }).catch(_err => console.log('Data analysis module not available'));
-    } else if (currentPage === 'chart') {
-        import('./js/pages/chart.js').then(module => {
-            if (module.initChart) {
-                module.initChart();
-            }
-        }).catch(_err => console.log('Chart module not available'));
+    if (currentPage === 'chart') {
+        initChart();
     }
 });
 
