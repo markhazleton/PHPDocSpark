@@ -7,6 +7,8 @@ export default defineConfig(({ mode }) => {
   return {
     // Entry points
     build: {
+      // Vite 8 replacement for rollup output.inlineDynamicImports
+      codeSplitting: false,
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'src/main.js'),
@@ -15,6 +17,9 @@ export default defineConfig(({ mode }) => {
           entryFileNames: 'js/site.js',
           chunkFileNames: 'js/[name].js',
           assetFileNames: (assetInfo) => {
+            if (!assetInfo || !assetInfo.name) {
+              return 'assets/[name][extname]';
+            }
             const info = assetInfo.name.split('.');
             const extType = info[info.length - 1];
             if (/\.(css)$/.test(assetInfo.name)) {
@@ -30,8 +35,6 @@ export default defineConfig(({ mode }) => {
           },
           // Ensure everything is bundled into single files
           manualChunks: undefined,
-          // Force everything into a single bundle
-          inlineDynamicImports: true,
         },
       },
       outDir: 'website/assets',
