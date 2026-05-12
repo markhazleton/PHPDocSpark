@@ -8,15 +8,15 @@ When setting up a Cloudflare redirect rule to forward traffic from a custom doma
 
 ### Specific Problem
 
-- **Source Domain**: `https://phpdocspark.markhazleton.com/`
+- **Source Domain**: `https://phpdoc.makeboldspark.com/`
 - **Target Domain**: `https://phpdocspark.azurewebsites.net/`
 - **Expected Behavior**: Root domain should redirect to root domain
-- **Actual Behavior**: `https://phpdocspark.markhazleton.com/` redirected to `https://phpdocspark.azurewebsites.net/markhazleton.com/`
+- **Actual Behavior**: `https://phpdoc.makeboldspark.com/` redirected to `https://phpdocspark.azurewebsites.net/markhazleton.com/`
 
 ### Original Configuration (Problematic)
 
 - **Rule Type**: Single Redirect
-- **Pattern**: `https://phpdocspark.markhazleton.com/*` (wildcard pattern)
+- **Pattern**: `https://phpdoc.makeboldspark.com/*` (wildcard pattern)
 - **Target URL**: `https://phpdocspark.azurewebsites.net/${1}`
 - **Status Code**: 301
 - **Preserve Query String**: Yes
@@ -36,7 +36,7 @@ This is the **officially recommended approach** from Cloudflare documentation fo
 ```text
 Type: Single Redirect
 When incoming requests match: Wildcard pattern
-Request URL: https://phpdocspark.markhazleton.com/
+Request URL: https://phpdoc.makeboldspark.com/
 Target URL: https://phpdocspark.azurewebsites.net/
 Status Code: 301
 Preserve Query String: Yes
@@ -48,7 +48,7 @@ Priority: 1 (Higher)
 ```text
 Type: Single Redirect
 When incoming requests match: Wildcard pattern
-Request URL: https://phpdocspark.markhazleton.com/*
+Request URL: https://phpdoc.makeboldspark.com/*
 Target URL: https://phpdocspark.azurewebsites.net/${1}
 Status Code: 301
 Preserve Query String: Yes
@@ -72,7 +72,7 @@ For users comfortable with Cloudflare's expression language, this provides more 
 ```text
 Type: Single Redirect
 When incoming requests match: Custom filter expression
-Expression: (http.host eq "phpdocspark.markhazleton.com")
+Expression: (http.host eq "phpdoc.makeboldspark.com")
 Target URL: concat("https://phpdocspark.azurewebsites.net", http.request.uri.path)
 Status Code: 301
 Preserve Query String: Yes
@@ -94,7 +94,7 @@ If preferring to keep a single wildcard rule, ensure proper pattern syntax:
 ```text
 Type: Single Redirect
 When incoming requests match: Wildcard pattern
-Request URL: phpdocspark.markhazleton.com/*
+Request URL: phpdoc.makeboldspark.com/*
 Target URL: https://phpdocspark.azurewebsites.net/$1
 Status Code: 301
 Preserve Query String: Yes
@@ -139,11 +139,11 @@ Preserve Query String: Yes
 
 ### Test Cases to Verify
 
-1. **Root Domain**: `https://phpdocspark.markhazleton.com/` → `https://phpdocspark.azurewebsites.net/`
-2. **Single Path**: `https://phpdocspark.markhazleton.com/about` → `https://phpdocspark.azurewebsites.net/about`
-3. **Nested Path**: `https://phpdocspark.markhazleton.com/docs/guide` → `https://phpdocspark.azurewebsites.net/docs/guide`
-4. **Query Strings**: `https://phpdocspark.markhazleton.com/search?q=test` → `https://phpdocspark.azurewebsites.net/search?q=test`
-5. **Fragment URLs**: `https://phpdocspark.markhazleton.com/page#section` → `https://phpdocspark.azurewebsites.net/page#section`
+1. **Root Domain**: `https://phpdoc.makeboldspark.com/` → `https://phpdocspark.azurewebsites.net/`
+2. **Single Path**: `https://phpdoc.makeboldspark.com/about` → `https://phpdocspark.azurewebsites.net/about`
+3. **Nested Path**: `https://phpdoc.makeboldspark.com/docs/guide` → `https://phpdocspark.azurewebsites.net/docs/guide`
+4. **Query Strings**: `https://phpdoc.makeboldspark.com/search?q=test` → `https://phpdocspark.azurewebsites.net/search?q=test`
+5. **Fragment URLs**: `https://phpdoc.makeboldspark.com/page#section` → `https://phpdocspark.azurewebsites.net/page#section`
 
 ### Testing Tools
 
@@ -153,7 +153,7 @@ Preserve Query String: Yes
 
 ```bash
 # Test redirect without following
-curl -I "https://phpdocspark.markhazleton.com/"
+curl -I "https://phpdoc.makeboldspark.com/"
 
 # Expected response
 HTTP/2 301

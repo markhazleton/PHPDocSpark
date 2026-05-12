@@ -99,8 +99,10 @@ declare(strict_types=1);
                 <div class="col-md-6">
                     <h5><?php echo e(PHPSPARK_BRAND); ?></h5>
                     <p>
-                        <i class="bi bi-link-45deg"></i> 
-                        <a href="https://phpdocspark.azurewebsites.net/" class="text-light">Live Demo</a>
+                        <i class="bi bi-link-45deg"></i>
+                        <a href="https://phpdoc.makeboldspark.com" class="text-light">PhpDocSpark</a> —
+                        built by <a href="https://markhazleton.com" class="text-light">Mark Hazleton</a> ·
+                        <a href="https://makeboldsolutions.com" class="text-light">Make Bold Solutions</a>
                         <br>
                         <a href="<?php echo e(PHPSPARK_SUITE_URL); ?>" class="text-light">Part of the <?php echo e(PHPSPARK_SUITE_NAME); ?> Suite</a>
                     </p>

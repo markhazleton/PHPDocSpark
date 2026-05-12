@@ -307,7 +307,7 @@ Guidelines:
 
 Released under the MIT License (c) Mark Hazleton.\
 This project (now branded as PHPDocSpark) supersedes legacy "Control Origins" naming. Historical repository slug and domains may still reference controlorigins for continuity but the authoritative brand is PHPDocSpark by Mark Hazleton.\
-Part of the broader WebSpark suite: [WebSpark](https://webspark.markhazleton.com)
+Part of the broader Make Bold Spark suite: [Make Bold Spark](https://web.makeboldspark.com)
 
 ---
 

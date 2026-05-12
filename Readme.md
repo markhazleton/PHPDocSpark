@@ -1,7 +1,8 @@
 # 🚀 PHPDocSpark by Mark Hazleton
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-phpdocspark.azurewebsites.net-blue?style=for-the-badge)](https://phpdocspark.azurewebsites.net/)
-[![Canonical](https://img.shields.io/badge/Canonical-phpdocspark.markhazleton.com-orange?style=for-the-badge)](https://phpdocspark.markhazleton.com)
+**Live Site**: [https://phpdoc.makeboldspark.com](https://phpdoc.makeboldspark.com)
+
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-phpdoc.makeboldspark.com-blue?style=for-the-badge)](https://phpdoc.makeboldspark.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Vite](https://img.shields.io/badge/Vite-7.1+-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -10,6 +11,17 @@
 > **An open-source PHP documentation & data exploration platform by Mark Hazleton (WebSpark suite) showcasing hybrid server-side + modern asset pipeline techniques.**
 
 **Educational Focus**: This project serves as a comprehensive reference implementation for building modern PHP applications with contemporary tooling, showcasing patterns for documentation management, data visualization, API integration, and responsive UI development.
+
+---
+
+## About
+
+PhpDocSpark is an open-source PHP documentation and data exploration platform showcasing hybrid server-side and modern asset pipeline techniques. It serves as a comprehensive reference implementation for building modern PHP applications with contemporary tooling, covering documentation management, data visualization, API integration, and responsive UI development.
+
+**Live Site**: [https://phpdoc.makeboldspark.com](https://phpdoc.makeboldspark.com)
+
+> Built by [Mark Hazleton](https://markhazleton.com) — Mark Hazleton, Solutions Architect
+> PhpDocSpark is part of the [Make Bold Spark](https://makeboldspark.com) portfolio of technical demonstrations.
 
 ---
 
@@ -46,7 +58,7 @@ PHPDocSpark demonstrates modern PHP web development practices by building a comp
 - **API Integration**: GitHub API, external services, caching strategies
 - **Responsive Design**: Bootstrap 5, mobile-first approach
 - **DevOps**: Azure Pipelines, automated deployment workflows
-- **Brand Integration**: Part of the WebSpark suite (<https://webspark.markhazleton.com>)
+- **Brand Integration**: Part of the Make Bold Spark suite (<https://web.makeboldspark.com>)
 
 ### **Target Audience**
 
@@ -447,7 +459,7 @@ stages:
 
 ### **Deployment Targets**
 
-- **Production**: [phpdocspark.azurewebsites.net](https://phpdocspark.azurewebsites.net/)
+- **Production**: [phpdoc.makeboldspark.com](https://phpdoc.makeboldspark.com)
 - **Platform**: Azure Web Apps (Linux)
 - **PHP Version**: 8.1+
 - **Deployment**: Automated via Azure DevOps
@@ -595,7 +607,7 @@ SOFTWARE.
 
 <div align="center">
 
-**[🌐 Live Demo](https://phpdocspark.azurewebsites.net/) | [📖 Documentation](https://phpdocspark.azurewebsites.net/?page=document_view) | [🔧 GitHub Issues](https://github.com/markhazleton/PHPDocSpark/issues)**
+**[🌐 Live Site](https://phpdoc.makeboldspark.com) | [📖 Documentation](https://phpdoc.makeboldspark.com/?page=document_view) | [🔧 GitHub Issues](https://github.com/markhazleton/PHPDocSpark/issues)**
 
 Built with ❤️ by [Mark Hazleton](https://markhazleton.com)
 

@@ -4,8 +4,7 @@
 
 Welcome to **PHPDocSpark by Mark Hazleton** – a sophisticated demonstration of how traditional PHP applications can seamlessly integrate with modern frontend build systems to create exceptional web experiences. This project serves as both a functional platform and an educational resource showcasing contemporary PHP development practices.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-phpdocspark.azurewebsites.net-blue?style=flat-square)](https://phpdocspark.azurewebsites.net/)
-[![Canonical](https://img.shields.io/badge/Canonical-phpdocspark.markhazleton.com-orange?style=flat-square)](https://phpdocspark.markhazleton.com)
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-phpdoc.makeboldspark.com-blue?style=flat-square)](https://phpdoc.makeboldspark.com)
 [![GitHub](https://img.shields.io/badge/📦_Source_Code-GitHub-black?style=flat-square)](https://github.com/markhazleton/PHPDocSpark)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square&logo=php&logoColor=white)](https://php.net)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
@@ -290,12 +289,11 @@ graph TD
 
 ### **🔗 Essential Resources & Links**
 
-- **🌐 [Live Demo](https://phpdocspark.azurewebsites.net/)** - Experience the full platform
-- **🌐 [Canonical URL](https://phpdocspark.markhazleton.com)** - Primary production domain
+- **🌐 [Live Site](https://phpdoc.makeboldspark.com)** - Experience the full platform
 - **📦 [Source Code](https://github.com/markhazleton/PHPDocSpark)** - Complete implementation
 - **📖 [Development Blog](https://markhazleton.com/creating-a-php-website-with-chat-gpt.html)** - Project creation story
 - **🎯 [Mark Hazleton's Portfolio](https://markhazleton.com)** - Author's main site
-- **🌟 [WebSpark Suite](https://webspark.markhazleton.com)** - Related educational projects
+- **🌟 [Make Bold Spark Suite](https://web.makeboldspark.com)** - Related educational projects
 
 ### **🎓 Educational Impact Statement**
 

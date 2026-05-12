@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 // Global configuration for PHPDocSpark
-$CANONICAL_BASE = 'https://phpdocspark.azurewebsites.net'; // Azure App Service domain (free tier)
+$CANONICAL_BASE = 'https://phpdoc.makeboldspark.com';
 
 // Load version information
 require_once __DIR__ . '/version.php';
@@ -14,7 +14,7 @@ define('PHPSPARK_SHORT', 'PHPDocSpark');
 define('PHPSPARK_AUTHOR', 'Mark Hazleton');
 define('PHPSPARK_AUTHOR_URL', 'https://markhazleton.com');
 define('PHPSPARK_SUITE_NAME', 'WebSpark');
-define('PHPSPARK_SUITE_URL', 'https://webspark.markhazleton.com');
+define('PHPSPARK_SUITE_URL', 'https://web.makeboldspark.com');
 
 // Default meta description (override per page if desired)
 $DEFAULT_META_DESCRIPTION = 'PHPDocSpark is an open source PHP documentation and data experience platform by Mark Hazleton featuring markdown viewing, search, data analysis, GitHub integration, and educational examples as part of the WebSpark suite.';
